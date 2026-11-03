@@ -12,7 +12,6 @@ export default function ChapterNav() {
       <a href="#s-stages">Nguyên nhân</a>
       <a href="#s-state">Độc quyền nhà nước</a>
       <a href="#s-vietnam">Liên hệ VN &amp; Điện nước</a>
-      <a href="#s-final">Kết luận</a>
       <label className="chapter-nav-mobile">
         <span>Đang xem</span>
         <select defaultValue="#s-cover" onChange={jumpToChapter} aria-label="Chọn chương">
@@ -20,7 +19,6 @@ export default function ChapterNav() {
           <option value="#s-stages">Chương 2 · Nguyên nhân</option>
           <option value="#s-state">Chương 3 · Độc quyền nhà nước</option>
           <option value="#s-vietnam">Chương 4 · Liên hệ Việt Nam và Điện &amp; nước</option>
-          <option value="#s-final">Chương 5 · Kết luận</option>
         </select>
       </label>
       <div className="scroll-progress nav-progress" aria-hidden="true"><span id="progressBar"></span></div>

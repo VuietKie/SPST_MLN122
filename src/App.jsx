@@ -8,8 +8,6 @@ import Chapter1Monopoly from "./sections/Chapter1Monopoly.jsx";
 import Chapter2State from "./sections/Chapter2State.jsx";
 import Chapter3Sectors from "./sections/Chapter3Sectors.jsx";
 import Chapter4Debate from "./sections/Chapter4Debate.jsx";
-import Chapter5Final from "./sections/Chapter5Final.jsx";
-import ChatMascot from "./components/ChatMascot.jsx";
 
 export default function App() {
   useScrollytelling();
@@ -26,13 +24,11 @@ export default function App() {
         <Chapter2State />
         <Chapter3Sectors />
         <Chapter4Debate />
-        <Chapter5Final />
 
         <Footer />
       </main>
 
       <Tooltip />
-      <ChatMascot />
     </>
   );
 }

@@ -244,12 +244,6 @@ export function useScrollytelling() {
         scrollTrigger: { trigger: ".stats", start: "top 72%" },
       });
       ScrollTrigger.create({ trigger: ".stats", start: "top 66%", once: true, onEnter: runStats });
-      ScrollTrigger.create({
-        trigger: ".final-lineart",
-        start: "top 78%",
-        once: true,
-        onEnter: () => gsap.to("#s-final .hotspot", { scale: 1, duration: 0.5, stagger: 0.15, ease: "back.out(2)" }),
-      });
       gsap.to(".hotspot", {
         scale: 1,
         duration: 0.5,
@@ -420,10 +414,6 @@ export function useScrollytelling() {
       navClickHandlers.push([l, handler]);
     });
     cleanups.push(() => navClickHandlers.forEach(([l, h]) => l.removeEventListener("click", h)));
-    const toTop = $("#toTop");
-    const toTopHandler = () => scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
-    toTop?.addEventListener("click", toTopHandler);
-    cleanups.push(() => toTop?.removeEventListener("click", toTopHandler));
 
     /* -------- state network: gold energy visibly flowing INWARD to the core -------- */
     (function netFlows() {
